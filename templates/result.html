@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>Result</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title-name">菓子ネーター</h1>
+        <!-- <div class="question-box1">
+            <h2>質問１</h2>
+            <h4>{{ question_1 }}</h4>
+            <form action="/yes_1" method="GET">
+                <button type="submit">Yes</button>
+            </form>
+            <form action="/no_1" method="GET">
+                <button type="submit">No</button>
+            </form>
+        </div> -->
+        
+        <!-- 質問２の部分 -->
+        <!-- <div class="question-box2">
+            <h2>質問2</h2>
+            <h4>{{ question_2 }}</h4>
+            <form action="/yes_2" method="GET">
+                <button type="submit">Yes</button>
+            </form>
+            <form action="/no_2" method="GET">
+                <button type="submit">No</button>
+            </form>
+        </div> -->
+        <div class="input-question">
+            <h2 class="question">どんなお菓子が食べたいか自由に入力してください</h2>
+            <form action="/result" method="POST">
+                <input type="text" name="input_text" class="text-box">
+                <input type="submit" value="送信" class="input-button">
+            </form>
+        </div>
+        <!-- <div class="complete">
+            <form action="/complete" method="GET">
+                <button type="submit">Complete</button>
+            </form>
+        </div> -->
+        <div class="result">
+            <h3 class="result-header">あなたにおすすめのお菓子は</h3>
+            <h1 class="answer">{{result_sweets}}</h1>
+        </div>
+    </div>
+</body>
+</html>
